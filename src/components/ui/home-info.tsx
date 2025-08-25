@@ -1,6 +1,6 @@
+import { NavLink } from "react-router";
 
 function HomeInfo() {
-
   return (
     <>
       <h1 className="home__title">
@@ -12,12 +12,12 @@ function HomeInfo() {
 
       <div className="button-flex">
         <div>
-          <a href="#" className="button__ghost ">
+          <NavLink to="/register" className="button__ghost">
             Create account
-          </a>
-          <a href="/login" className="home-button">
+          </NavLink>
+          <NavLink to="/login" className="home-button">
             Sign in
-          </a>
+          </NavLink>
         </div>
       </div>
     </>
